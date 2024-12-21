@@ -13,7 +13,7 @@ def get_days_from_today(date):
 import random
 
 def get_numbers_ticket(min, max, quantity):
-    if min >= 1 and max < 1000 and min < quantity < max:
+    if min >= 1 and max <= 1000 and 1 <= quantity <= (max - min + 1):
        my_list = random.sample(range(min, max + 1), quantity)
        return sorted(my_list)      
     else:
@@ -28,4 +28,8 @@ def normalize_phone(phone_number):
         return "+38" + phone_number
     else:
         return phone_number
+
+
+
+
         
