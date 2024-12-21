@@ -8,7 +8,7 @@ def get_days_from_today(date):
         x = (input_date - date_now).days
         return x
     except ValueError:
-        return "Нaписанo y невідповідному форматі дату"
+        return "написано у невідповідному форматі"
 # task 2
 import random
 
